@@ -55,7 +55,7 @@ function StudentEdit() {
         }
         axios.post('http://localhost/arcadian-admin-ravi/public/api/users/'+id, data).then(res => {
             alert(res.data);
-            navigate('/users');
+            navigate('/');
             setLoading(false);
         })
             .catch(function (error) {
@@ -83,7 +83,7 @@ function StudentEdit() {
                         <div className="card">
                             <div className="card-header">
                                 <h4>Edit Student
-                                    <Link to='/users' className="btn btn-danger float-end">Back</Link>
+                                    <Link to='/' className="btn btn-danger float-end">Back</Link>
                                 </h4>
                             </div>
                             <div className="card-body">

@@ -8,10 +8,10 @@ import StudentEdit from '../pages/StudentEdit';
 function MyRouter(){
     return(
         <Routes>
-            <Route path='/' element={<Home/>}/>
+            <Route path='/home' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            <Route path='/users' element={<Student/>}/>
+            <Route path='/' element={<Student/>}/>
             <Route path='/users/:id/edit' element={<StudentEdit/>}/>
             <Route path='/users/:id/delete' element={<Student/>}/>
             <Route path='/users/create' element={<StudentCreate/>}/>
